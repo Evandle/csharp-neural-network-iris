@@ -1,0 +1,38 @@
+Settings: hidden=16, LRPOUT=0.05, LRPIN=0.05, epochs=1000
+
+=== TRAINING SET ===
+Samples : 105
+MSE     : 0.006951
+Accuracy: 99.05%
+
+Confusion matrix (rows = actual, columns = predicted):
+                     Iris-setosa Iris-versicolor  Iris-virginica
+Iris-setosa                   35               0               0
+Iris-versicolor                0              34               1
+Iris-virginica                 0               0              35
+
+Class              Precision    Recall        F1
+Iris-setosa            1.000     1.000     1.000
+Iris-versicolor        1.000     0.971     0.986
+Iris-virginica         0.972     1.000     0.986
+Macro average          0.991     0.990     0.990
+
+=== TEST SET (held out) ===
+Samples : 21
+MSE     : 0.032646
+Accuracy: 90.48%
+
+Confusion matrix (rows = actual, columns = predicted):
+                     Iris-setosa Iris-versicolor  Iris-virginica
+Iris-setosa                    7               0               0
+Iris-versicolor                0               6               1
+Iris-virginica                 0               1               6
+
+Class              Precision    Recall        F1
+Iris-setosa            1.000     1.000     1.000
+Iris-versicolor        0.857     0.857     0.857
+Iris-virginica         0.857     0.857     0.857
+Macro average          0.905     0.905     0.905
+
+Baseline (always guess 'Iris-setosa'): 33.33%
+Network test accuracy minus baseline: +57.1 percentage points
